@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+
+  /* Background Image */
+  background-image: url("divya.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+}
+
+/* Dark overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.reason-box {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 15px;
+  font-size: 20px;
+  min-height: 100px;
+  transition: 0.3s ease;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff4d6d;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff1f4b;
+  transform: scale(1.05);
+}
+
+.final-message {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  display: none;
+  color: #ffb3c6;
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
